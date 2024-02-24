@@ -169,8 +169,8 @@ func StringToSpec(ja3 string, userAgent string, forceHTTP1 bool) (*utls.ClientHe
 	// force http1
 	if forceHTTP1 {
 		extMap["16"] = &utls.ALPNExtension{
-			//AlpnProtocols: []string{"http/1.1"},
-			AlpnProtocols: []string{"h2"},
+			AlpnProtocols: []string{"http/1.1"},
+			//AlpnProtocols: []string{"h2"},
 		}
 	}
 
