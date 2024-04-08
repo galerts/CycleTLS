@@ -198,10 +198,13 @@ func StringToSpec(ja3 string, userAgent string, forceHTTP1 bool) (*utls.ClientHe
 		}
 		// //Optionally add Chrome Grease Extension
 		// if e == "21" && parsedUserAgent == chrome && !tlsExtensions.UseGREASE {
-		if e == "21" && parsedUserAgent.UserAgent == chrome {
-			exts = append(exts, &utls.UtlsGREASEExtension{})
-		}
+		//if e == "21" && parsedUserAgent.UserAgent == chrome {
+			//exts = append(exts, &utls.UtlsGREASEExtension{})
+		//}
 		exts = append(exts, te)
+	}
+	if parsedUserAgent.UserAgent == chrome {
+		exts = append(exts, &utls.UtlsGREASEExtension{})
 	}
 
 	// build CipherSuites
