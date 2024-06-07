@@ -3,7 +3,7 @@ package cycletls
 import (
 	"encoding/json"
 	"flag"
-	http "github.com/Danny-Dasilva/fhttp"
+	http "github.com/galerts/fhttp"
 	"github.com/gorilla/websocket"
 	"io"
 	"log"
