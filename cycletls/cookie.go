@@ -1,7 +1,7 @@
 package cycletls
 
 import (
-	http "github.com/galerts/fhttp"
+	http "github.com/Danny-Dasilva/fhttp"
 	nhttp "net/http"
 	"strconv"
 	"strings"
