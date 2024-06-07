@@ -5,7 +5,7 @@ go 1.21
 toolchain go1.21.3
 
 require (
-	github.com/Danny-Dasilva/fhttp v0.0.0-20240217042913-eeeb0b347ce1
+	github.com/galerts/fhttp v0.0.0-20240607123237-099768a408ca
 	github.com/andybalholm/brotli v1.1.0
 	github.com/gorilla/websocket v1.5.1
 	github.com/refraction-networking/utls v1.6.2
